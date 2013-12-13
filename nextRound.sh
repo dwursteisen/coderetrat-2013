@@ -1,6 +1,7 @@
 
 round=`more round.txt`
-git commit -a -m "END OF ROUND $round"
+git add -A
+git commit -am "END OF ROUND $round"
 git checkout -f HEAD~1
 git branch "round$round"
 git checkout "round$round"
